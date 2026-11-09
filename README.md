@@ -1,6 +1,6 @@
 # Excession Labs plugins for Claude Code
 
-One plugin, `excession-security`, with four skills and two remote MCP servers. Both servers are public and read-only. They need no account and no API key.
+One plugin, `excession-security`, with ten skills and two remote MCP servers. Both servers are public and read-only. They need no account and no API key.
 
 ## Install
 
@@ -32,6 +32,14 @@ npx skills add Excession-Labs/claude-plugins
 | `security-headers-review` | Calls `check_security_headers`, explains each failed header and gives nginx, Apache, Caddy and Express snippets |
 | `pentest-provider-research` | Compares providers with the PentestCompare tools. Facts come from the dataset, with check dates |
 | `agent-approval-gate` | Reviews an AI agent's tools and adds enforced approval for outbound actions, based on the indirect prompt injection lab |
+| `web-app-security-review` | Reviews a web app against the OWASP Top 10 2025, with proof for each finding |
+| `api-security-review` | Reviews an API against the OWASP API Security Top 10 2023 |
+| `access-control-review` | Tests IDOR, BOLA and tenant isolation with the two-account read-back method |
+| `auth-session-review` | Checks login, reset, MFA, OAuth, JWT and session handling |
+| `llm-app-security-review` | Reviews an LLM app or agent against the OWASP Top 10 for LLM Applications 2026 |
+| `secrets-and-config-review` | Finds leaked secrets and risky configuration, with values masked |
+
+The review skills share one rule: a finding needs evidence of a real effect, not a bare "success". Each ends with a "Controls that held" list.
 
 In Claude Code the skills run as `/excession-security:pentest-scoping` and so on. Claude also loads them when a request matches.
 

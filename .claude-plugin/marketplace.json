@@ -1,6 +1,6 @@
 {
   "name": "excession-labs",
-  "description": "Security skills and MCP servers from Excession Labs: pentest scoping, security header review, sourced pentest provider research and AI agent approval gates.",
+  "description": "Security skills and MCP servers from Excession Labs: pentest scoping, security header review, provider research, AI agent approval gates and six security review skills.",
   "owner": {
     "name": "Excession Labs",
     "email": "support@excessionlabs.ai"
@@ -9,7 +9,7 @@
     {
       "name": "excession-security",
       "source": "./plugins/excession-security",
-      "description": "Four skills and two read-only remote MCP servers for pentest scoping, security header checks, provider research and AI agent approval gates.",
+      "description": "Ten skills and two read-only remote MCP servers for pentest scoping, security header checks, provider research, approval gates and security reviews.",
       "category": "security",
       "tags": ["security", "pentest", "mcp", "ai-agents"]
     }
