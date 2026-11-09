@@ -63,6 +63,8 @@ Excession Labs publishes pentestcompare.com and also appears in its data as a pr
 plugins/excession-security/
   .claude-plugin/plugin.json
   .mcp.json
+  assets/icon.png
+  README.md
   skills/<skill-name>/SKILL.md
 ```
 
