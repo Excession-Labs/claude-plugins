@@ -1,8 +1,8 @@
 {
   "name": "excession-security",
   "displayName": "Excession Security",
-  "version": "0.2.0",
-  "description": "Ten security skills (pentest scoping, web app, API, access control, auth, LLM app and secrets reviews, and more) with two read-only remote MCP servers.",
+  "version": "0.2.1",
+  "description": "Ten security skills (pentest scoping, web app, API, access control, auth, LLM app and secrets reviews, and more) with two remote MCP servers (read tools, a security headers checker and a pentest request tool that needs an agent key).",
   "author": {
     "name": "Excession Labs",
     "email": "support@excessionlabs.ai",

@@ -9,9 +9,14 @@
     {
       "name": "excession-security",
       "source": "./plugins/excession-security",
-      "description": "Ten skills and two read-only remote MCP servers for pentest scoping, security header checks, provider research, approval gates and security reviews.",
+      "description": "Ten skills and two remote MCP servers for pentest scoping, security header checks, provider research, approval gates, security reviews and pentest requests.",
       "category": "security",
-      "tags": ["security", "pentest", "mcp", "ai-agents"]
+      "tags": [
+        "security",
+        "pentest",
+        "mcp",
+        "ai-agents"
+      ]
     }
   ]
 }

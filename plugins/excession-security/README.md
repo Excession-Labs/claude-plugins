@@ -1,6 +1,6 @@
 # Excession Labs plugins for Claude Code
 
-One plugin, `excession-security`, with ten skills and two remote MCP servers. Both servers are public and read-only. They need no account and no API key.
+One plugin, `excession-security`, with ten skills and two remote MCP servers. Both servers are public. Reading needs no account and no API key. One tool on the penetrationtestservices.com server, `request_pentest`, sends a test request for a person; it needs a free agent key from https://penetrationtestservices.com/agent/auth.
 
 ## Install
 
@@ -50,7 +50,7 @@ In Claude Code the skills run as `/excession-security:pentest-scoping` and so on
 | `pentestcompare` | https://pentestcompare.com/mcp | `list_providers`, `get_provider`, `search_site`, `get_page`, `how_to_contact` |
 | `penetrationtestservices` | https://penetrationtestservices.com/mcp | `check_security_headers`, `search_site`, `get_page`, `how_to_contact` |
 
-All tools are annotated read-only. `check_security_headers` sends one GET request per redirect to the URL you give it. It reads headers only. It is not a penetration test.
+Every tool except `request_pentest` is annotated read-only. `request_pentest` sends the person's name, email and the systems to test to Excession Labs, only when the person asked for it and agreed to be contacted (`person_consent` and `authorized` must be true); Excession Labs replies by email, and testing starts only after a written scope and written authorization. Privacy notice: https://penetrationtestservices.com/privacy/ . `check_security_headers` sends one GET request per redirect to the URL you give it. It reads headers only. It is not a penetration test.
 
 Both servers are in the official MCP registry as `com.pentestcompare/site` and `com.penetrationtestservices/site`.
 
@@ -71,7 +71,6 @@ Excession Labs publishes pentestcompare.com and also appears in its data as a pr
 plugins/excession-security/
   .claude-plugin/plugin.json
   .mcp.json
-  assets/icon.png
   README.md
   skills/<skill-name>/SKILL.md
 ```
