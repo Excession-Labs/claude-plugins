@@ -1,0 +1,26 @@
+{
+  "name": "excession-security",
+  "displayName": "Excession Security",
+  "version": "0.1.0",
+  "description": "Pentest scoping, security header review, sourced pentest provider research and AI agent approval gates, with two read-only remote MCP servers.",
+  "author": {
+    "name": "Excession Labs",
+    "email": "support@excessionlabs.ai",
+    "url": "https://excessionlabs.ai"
+  },
+  "homepage": "https://penetrationtestservices.com/developers/",
+  "repository": "https://github.com/Excession-Labs/claude-plugins",
+  "license": "MIT",
+  "keywords": [
+    "security",
+    "pentest",
+    "penetration-testing",
+    "mcp",
+    "ai-agents",
+    "security-headers"
+  ],
+  "documentationUrl": "https://penetrationtestservices.com/developers/",
+  "supportUrl": "https://penetrationtestservices.com/contact/",
+  "privacyPolicyUrl": "https://penetrationtestservices.com/privacy/",
+  "icon": "./assets/icon.png"
+}

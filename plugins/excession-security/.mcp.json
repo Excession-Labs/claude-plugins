@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "pentestcompare": {
+      "type": "http",
+      "url": "https://pentestcompare.com/mcp"
+    },
+    "penetrationtestservices": {
+      "type": "http",
+      "url": "https://penetrationtestservices.com/mcp"
+    }
+  }
+}
